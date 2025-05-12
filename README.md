@@ -8,7 +8,7 @@ A modern and feature-rich Spring Boot web application that allows users to buy a
 
 | Admin | Explore | Purchased Items |
 |-----------|--------------|-----------------|
-| ![{F5ADED95-4491-4B97-9709-C7951FC86CF4}](https://github.com/user-attachments/assets/eb486452-54eb-48fe-b43f-f5b26d246ed9) | ![{8B9665C5-8ECB-4873-9EE7-6400B5D26209}](https://github.com/user-attachments/assets/5a678dcd-5568-4a16-abdb-b31b7d2943fc) | ![{3DC937EF-9784-400C-84E1-156A9C41061F}](https://github.com/user-attachments/assets/5d322b86-bcfe-46bd-8d74-bdbc9f6c31b6) |
+| ![{D9EA339B-D3E0-429F-9F19-F9044ACA11C8}](https://github.com/user-attachments/assets/11177da5-13bb-4430-a01a-405ef1139589) | ![{8E6809F3-D3AA-4E0A-86F8-D79C7F8733A9}](https://github.com/user-attachments/assets/3da5ff9c-5096-4ac7-969a-3bdc6c162320) | ![{5DCBE003-0573-4FF7-A725-52367A305FD8}](https://github.com/user-attachments/assets/40ee7521-d1b4-4f7d-8a26-074d658a2bdf) |
 
 
 ---
