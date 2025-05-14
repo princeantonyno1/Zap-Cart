@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head th:replace="fragmenta :: head-link">
+</head>
+
+<body>
+
+<div th:replace="fragmenta :: preloader"></div>
+
+<div id="main-wrapper">
+
+	<div th:replace="fragmenta :: top-header"></div>
+
+	<div th:replace="fragmenta :: title-menu"></div>
+
+	<div class="clearfix"></div>
+
+	<section class="middle">
+		<div class="container">
+			<form th:action="@{/add-to-cart}" method="post">
+				<div class="row justify-content-between">
+					<div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+						<div class="quick_view_slide">
+							<div class="single_view_slide">
+								<a th:href="*{'data:image/jpeg;base64,' + product.image}" data-lightbox="roadtrip" class="d-block mb-4">
+									<img th:src="*{'data:image/jpeg;base64,' + product.image}" class="img-fluid rounded" th:alt="${product.name}" />
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+						<div class="prd_details pl-3">
+							<input type="hidden" th:value="${product.id}" name="id">
+							<div class="prt_01 mb-1">
+								<span class="text-light bg-info rounded px-2 py-1" th:text="${product.category.name}"></span>
+							</div>
+							<div class="prt_02 mb-3">
+								<h2 class="ft-bold mb-1" th:text="${product.name}"></h2>
+								<div class="text-left">
+									<div class="elis_rty">
+										<span class="ft-medium text-muted line-through fs-md mr-2" th:text="'$' + ${product.costPrice}"></span>
+										<span class="ft-bold theme-cl fs-lg mr-2" th:text="'$' + ${product.salePrice}"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="prt_03 mb-4">
+								<p th:text="${product.description}"></p>
+							</div>
+							<div class="prt_05 mb-4">
+								<div class="form-row mb-7">
+									<div class="col-12 col-lg">
+										<!-- Submit -->
+										<button th:if = "${session.username != null}" type="submit" class="btn btn-block custom-height bg-dark mb-2" onclick="showAlert()">
+											<i class="lni lni-shopping-basket mr-2"></i>Purchase
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<section th:replace="fragmenta :: features"></section>
+
+	<footer th:replace="fragmenta :: footer"></footer>
+
+	<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+
+</div>
+<div th:replace="fragmenta :: scripts"></div>
+
+</body>
+</html>

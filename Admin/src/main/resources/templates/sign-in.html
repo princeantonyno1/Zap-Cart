@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-scompiler-id="0" xmlns:th="https://www.thymeleaf.org/">
+
+<head th:replace="fregments :: header"></head>
+
+<body>
+<div class="container-fluid min-vh-100 d-flex align-items-center">
+	<div class="row w-100">
+
+
+		<!-- Left Column (Logo + Text) -->
+		<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center px-5">
+			<img src="/images/zap.png" alt="Zap Store Logo" style="max-width: 250px;" class="mb-4">
+			<h2 class="mb-2" style="font-family: 'Anta', sans-serif; font-weight: bolder">Zap Cart</h2>
+			<p class="text-muted fs-5" style="  font-family: 'Lexend Deca', sans-serif; ">
+				The best place to buy and sell digital products</p>
+		</div>
+
+		<!-- Right Column (Sign-in Card) -->
+		<div class="col-md-6 d-flex justify-content-center align-items-center">
+			<div class="card w-75">
+				<div class="card-body p-sm-5 m-sm-3">
+					<h1 class="mb-5 fs-3 text-center heading_text">Sign In</h1>
+
+					<div th:if="${param.error}" class="alert alert-danger text-center">
+						Invalid username or password
+					</div>
+					<div th:if="${param.logout}" class="alert alert-success text-center">
+						You have been logged out!
+					</div>
+
+					<form th:action="@{/do-login}" method="post">
+						<div class="mb-4">
+							<label class="form-label light_text">E-mail address</label>
+							<input type="email" name="username" id="username" class="form-control form-control-lg" />
+						</div>
+						<div class="mb-4">
+							<label class="form-label light_text">Password</label>
+							<input type="password" name="password" id="password" class="form-control form-control-lg" />
+						</div>
+						<div class="mb-2 row py-3 flex-wrap">
+							<a class="text-end small">Forgot Password?</a>
+						</div>
+						<div>
+							<button type="submit" class="btn btn-primary btn-lg w-100" style="font-size: 1.55rem">Sign In</button>
+						</div>
+					</form>
+				</div>
+				<div class="card-body pb-5 my-1 text-center text-muted">
+					Don’t have an account? <a class="customAncor" th:href="@{/register}">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div th:replace="fregments :: scripts"></div>
+</body>
+</html>
