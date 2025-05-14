@@ -52,7 +52,7 @@ A modern and feature-rich Spring Boot web application that allows users to buy a
 | File Storage    | Local File System                      |
 | Payment Gateway | Stripe                                 |
 | Testing         | JUnit, Mockito                         |
-| Dev Tools       | Maven, Lombok, Swagger UI              |
+| Dev Tools       | Maven, Lombok           |
 
 ---
 
@@ -72,7 +72,7 @@ A modern and feature-rich Spring Boot web application that allows users to buy a
 ##📘 API Documentation
 Zap-Cart includes a Swagger UI for interactive API testing:
 
-👉 http://localhost:8080/swagger-ui/index.html
+👉 http://localhost:8080/
 
 ---
 
@@ -80,7 +80,7 @@ Zap-Cart includes a Swagger UI for interactive API testing:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/zap-cart.git
+git clone https://github.com/princeantonyno1/zap-cart.git
 cd zap-cart
 
 # Copy environment variables template
@@ -94,7 +94,4 @@ cp .env.example .env
 
 🛡️ Admin: Manage platform, view analytics
 
-🔧 API Documentation
-Zap Cart uses Swagger UI for API exploration:
 
-🔗 http://localhost:8080/swagger-ui/index.html
