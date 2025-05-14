@@ -67,12 +67,7 @@ A modern and feature-rich Spring Boot web application that allows users to buy a
 - Stripe API keys
 - (Optional) AWS credentials (if upgrading to S3)
 
----
 
-##📘 API Documentation
-Zap-Cart includes a Swagger UI for interactive API testing:
-
-👉 http://localhost:8080/
 
 ---
 
@@ -90,8 +85,3 @@ cp .env.example .env
 
 # Run the application
 ./mvnw spring-boot:run
-
-
-🛡️ Admin: Manage platform, view analytics
-
-
