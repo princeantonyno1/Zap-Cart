@@ -7,8 +7,8 @@
     <groupId>com.digitalstore.imperium</groupId>
     <artifactId>Zap-Store</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Jonas-General-Purpose-Shop-SpringBoot</name>
-    <description>Jonas General Purpose Shop Using SpringBoot</description>
+    <name>Imperium Project</name>
+    <description>Digital Product store using Spring Boot</description>
 
     <modules>
         <module>Library</module>
